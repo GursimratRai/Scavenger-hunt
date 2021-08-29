@@ -1,6 +1,49 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Scavenger Hunt 
+
+A Alert management application which help the customers to find the service center / branches of the company in their locality.
+
+
+## 🔗 Live Link
+
+This application is live and available online [here](https://scavenger-hunt-g.netlify.app/)
+
+  
+## API Reference
+
+#### Base Url
+
+```http
+  https://scavenger-hunt-api-g.herokuapp.com/
+```
+#### Get item
+
+```http
+  GET /api/v1/
+```
+
+| Reference | Method     | Purpose                       |
+| :-------- | :------- | :-------------------------------- |
+| `branch/login`      | `POST` | Return JSON contains list of alerts for the authorized branch |
+| `customer/branches`      | `POST` | Return JSON contains list of branches in the locality (In that Pincode) |
+
+
+## Screenshots
+Home
+![App Screenshot](https://drive.google.com/uc?export=view&id=1iA2Mxjhnq66qbhUDHUGTnAePJQQ_n0SF)
+Login 
+![App Screenshot](https://drive.google.com/uc?export=view&id=1iDKQj6b70nzB2Uj1c2dUeTURndF4126Q)
+Search Results 
+![App Screenshot](https://drive.google.com/uc?export=view&id=1iJkhtvbC47f2JSmdJ_rUVDX4aKVzue74)
+Branch Representative Dashboard
+![App Screenshot](https://drive.google.com/uc?export=view&id=1iLqBh_19-AoADeJ4bdD6SYNsaoMf6xGa)
+
+## Features
+
+- Display the details of the branches serving that pincode.
+- An alert is generated for all the branches present in that pincode.
+- Alert is generated for the administrator even if there is no branch serving that pincode.
+- Alerts generated are persistent i.e. no branch/administrator miss any alert if a user is not logged into the system at the time the alert got generated.
 
 ## Available Scripts
 
